@@ -33,7 +33,7 @@ query -- ?pw' || id='admin'--
 
 #level-7 :
 
-this level os combination of lvl 6 and lvl 4 give the ascii charecter of and as that is blocked and then procced with the lvl 4 process giving it to the burp suite and brute force that.
+this level is combination of lvl 6 and 4, give the ascii charecter of "and" as that is blocked and then procced with the lvl 4 process giving it to the burp suite and brute force that.
 
 and - && - %26%26(ascii)
 
@@ -41,10 +41,14 @@ and - && - %26%26(ascii)
 
 this level the id is the parameter and it requires admin as the id.that is blocked using the preg_match.
 
-the preg match does not look for the casing and also the sql database as well that means if i give the id=Admin that will bypass because the preg_match is case sensitive and the database is insensitive that returns for the value "admin" from the database and in the if condition that satisfies as the output from the database will be "admin".
+the preg match is look for the casing and but the sql database is not that means if i give the id=Admin that will bypass because the preg_match is case sensitive and the database is insensitive that returns for the value "admin" from the database and in the if condition that satisfies as the output from the database will be "admin".
 
 #level-9 :
 
+the str_replace function will replace the string in a linear search manner.that is
 
+if i give adadminmin as input and that is searching for admin then
+
+it will select the size of the required string that is 5 here and it will select the first 5 charecters in the input that is "adadm" that is not equal to the required string and repeats the process then in the third case that returns "admin" which is the required one and it will cut that one and concates the first "ad" and the last "min". which is the required parameter value.
 
 
