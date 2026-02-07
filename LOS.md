@@ -100,4 +100,39 @@ instead of spaces we can use -- %0c - form feed --
 
 level-15 :
 
+it does not have id=guest initially like before levels so we can use the wildcard charecters of sql.
+
+wildcard charecters -- they are used with LIKE statement in the sql query . 
+
+syntax -- pw=a%   ---> this will check any of the element in pw column of database start with "a" or not .
+          pw=_a%  ---> this will check any of the element in pw column of the database is "a" or not. 
+
+in this way keep on checking until the admin's pw charecter matches then it will give the id value as admin.
+
+<img width="250" height="89" alt="Screenshot 2026-02-07 at 14 22 09" src="https://github.com/user-attachments/assets/7bb785f6-d138-41fa-ac18-cffe68b1ed90" />
+
+in the first charecters also the admin password will be one of the charecters(brute force charecters) but that may be matched with some other user in the table who is above the admin.
+
+level-16 :
+
+here the level gave two parameters id and pw. both of them are blocked from using single quote(') which will help to close the parameter and generate a new parameter value that does not go in as normal string.
+
+backslash -- this will make the following charecter literal that means that is left behind while preg_match is checking.
+
+if we give / at the id parameter it will make the ending quote of id as normal charecter and the opening quote will not consider this for closing then it will choose the next quote as the closing quote which is the opeing quote of pw . likewise the pw falls into id which makes the new pw that we give is recognised as the active query part.
+
+id=/ pw= or 1=1-- -
+
+level-17 :
+
+addslashes -- this will add slashes infront of predefined( ' , \ , " , NULL CHARECTER)
+in the previous lvl we have given backslash to escape the single quote in the query. this time the addslashes is doing that job.
+
+here our goal is to keep the pw parameter value as active to do that if we use single quote the last quote of the pw will have the opening quote of pw to pair makes that inactive.
+
+if i use the backslash it will become (\\). what happens here is the first backslash escapes the first backslash so the closing single quote of the id is not escaped which results the pairing b/w opening quote of id and closing quote of id.
+
+so use the double quote(") or null charecter(%00) which makes the pw parameter value active.
+
+<img width="785" height="411" alt="Screenshot 2026-02-07 at 18 22 34" src="https://github.com/user-attachments/assets/d23cb09b-7adb-4b4f-915a-81f41837d048" />
 
