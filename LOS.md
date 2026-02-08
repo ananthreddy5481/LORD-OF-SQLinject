@@ -136,3 +136,53 @@ so use the double quote(") or null charecter(%00) which makes the pw parameter v
 
 <img width="785" height="411" alt="Screenshot 2026-02-07 at 18 22 34" src="https://github.com/user-attachments/assets/d23cb09b-7adb-4b4f-915a-81f41837d048" />
 
+
+level-18 : 
+
+<img width="672" height="48" alt="Screenshot 2026-02-08 at 13 34 59" src="https://github.com/user-attachments/assets/0fbe6fd6-a18c-47cc-9580-d777d7efa555" />
+
+here we are leaving the pw parameter value empty that means that is set to zero and we are checking equals to condition that is "empty pw varible is equal to 0 or not"
+that is true.
+
+; --> that is used to terminate the statement (to end the statement upto "equals to" statement)
+
+the rest was commented out using the %00(null charecter) that makes the "id != admin" comment so  the database does not read that.
+
+level-19 :
+
+the password cannot be retirved using the brute force.
+
+user defined session varibles -- the session varibles that are created by the user to use in the particular session we can use them to use until the session is expired.
+
+<img width="1124" height="38" alt="Screenshot 2026-02-08 at 16 24 15" src="https://github.com/user-attachments/assets/8aa0b6f3-efe1-435e-a46d-3fbb4eb62449" />
+
+session varible syntax -- @a:=pw -->the @a is the name of the session varible here .
+
+it will store the pw value of the admin.
+
+UNION -- union will combine two select statements 
+
+table 1 : 
+<img width="735" height="202" alt="Screenshot 2026-02-08 at 16 33 37" src="https://github.com/user-attachments/assets/4da979f0-a5a0-4fb4-8bdc-24ce7d0145a7" />
+
+table 2 :
+<img width="730" height="221" alt="Screenshot 2026-02-08 at 16 34 33" src="https://github.com/user-attachments/assets/c89cbdf8-b27f-4067-8e4a-b9d4f589cbf2" />
+
+AFTER UNION ::
+<img width="719" height="258" alt="Screenshot 2026-02-08 at 16 35 16" src="https://github.com/user-attachments/assets/7c58eecf-fc9c-4b1a-af38-5d0f6d23194e" />
+
+in the same way after using the union statement in our case the pw stored in the @pw will become part of the id column and will be returned as the code is returing the result(id) .
+
+<img width="184" height="64" alt="Screenshot 2026-02-08 at 16 37 48" src="https://github.com/user-attachments/assets/daadeb06-4e14-43db-b705-89d1e6396243" />
+
+the password is visible after hello is result of the union which will keep the password in the id column and selects that.
+
+
+level 20 :
+
+  # -- comments the entire text until the line completes.
+
+  \n -- new line charecter -- this will make the text the sql read that it is a new line input.
+  use the new liner in hex form.
+  
+  <img width="926" height="214" alt="Screenshot 2026-02-08 at 17 59 34" src="https://github.com/user-attachments/assets/82d5ab6b-07a1-4d40-acbb-1cef4ea0aacd" />
