@@ -146,8 +146,7 @@ that is true.
 
 ; --> that is used to terminate the statement (to end the statement upto "equals to" statement)
 
-the rest was commented out using the %00(null charecter) that makes the "id != admin" comment so  the database does not read that.
-
+%00 -- null charecter -- the query is most of the times is read upto only null charecter(\n) so the rest is cutoff from the query.
 level-19 :
 
 the password cannot be retirved using the brute force.
