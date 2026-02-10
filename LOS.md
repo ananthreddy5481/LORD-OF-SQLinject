@@ -1,4 +1,4 @@
-# LORD-OF-SQLinject
+# LORD-OF-SQLinjection
 
 #level-1 :
 
