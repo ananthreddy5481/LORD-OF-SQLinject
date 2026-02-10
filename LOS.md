@@ -2,7 +2,7 @@
 
 #level-1 :
 
-the site is having an sql injection and wanted any user input for completing the level. so give the "or 1=1-- .
+the site is having an sql injection and wanted any user input for completing the level. so give the 'or 1=1-- .
 
 #level-2 :
 
