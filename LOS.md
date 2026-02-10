@@ -23,17 +23,17 @@ now do brute force that using them.
 
 here the spaces are blocked so in the url give the tab space(%09) instead of the normal space charecter(%20) because the code blocks the normal space but does not check for the tab space or %09 in the url so we can bypass.
 query -- ?pw'%09||%09id='admin'--%09
-%09 -- the ascii form for the tab space.
+%09 -- the hex form for the tab space.
 
 #level-6 :
 
-in the level the OR and AND are blocked so as we were using the double pipe(||) does not matter for us instead of using the pipe if we use the or then we need to use the || again.
+in the level the OR and AND are blocked so as we were using the double pipe(||) does not matter for us instead of using the pipe if we use the "OR" then we need to use the || again.
 
 query -- ?pw=' || id='admin'-- 
 
 #level-7 :
 
-this level is combination of lvl 6 and 4, give the ascii charecter of "and" as that is blocked and then procced with the lvl 4 process giving it to the burp suite and brute force that.
+this level is combination of lvl 6 and 4, give the hex charecter of "and" as that is blocked and then procced with the lvl 4 process giving it to the burp suite and brute force that.
 
 and - && - %26%26(ascii)
 
@@ -41,15 +41,15 @@ and - && - %26%26(ascii)
 
 this level the id is the parameter and it requires admin as the id.that is blocked using the preg_match.
 
-the preg match is look for the casing and but the sql database is not that means if i give the id=Admin that will bypass because the preg_match is case sensitive and the database is insensitive that returns for the value "admin" from the database and in the if condition that satisfies as the output from the database will be "admin".
+the preg match is look for the casing and but the sql database is not , that means if i give the id=Admin that will bypass because the preg_match is case sensitive and the database is insensitive that returns for the value "admin" from the database and in the if condition that satisfies as the output from the database will be "admin".
 
 #level-9 :
 
 the str_replace function will replace the string in a linear search manner.that is
 
-if i give adadminmin as input and that is searching for admin then
+if i give "aadmindmin" as input
 
-it will select the size of the required string that is 5 here and it will select the first 5 charecters in the input that is "adadm" that is not equal to the required string and repeats the process then in the third case that returns "admin" which is the required one and it will cut that one and concates the first "ad" and the last "min". which is the required parameter value.
+it will select the size of the required string that is 5 here and it will select the first 5 charecters in the input that is "aadmi" that is not equal to the required string and repeats the process then in the third case that returns "admin" which is the required one and it will cut that one and concates the first "a" and the last "dmin". which is the required parameter value.
 
 level-10 : 
 
@@ -62,7 +62,7 @@ this makes the condition 1=0 as a part of comment and database does not read tha
 
 level-11 : 
 
-this level needs password but blocks the substr function and also blocks the or,and in the input to by pass that use || and %26%26.
+this level needs password but blocks the substr function and also blocks the "or,and" in the input to by pass that use || and %26%26.
 
 for substr replace it with MID function.
 
@@ -92,7 +92,7 @@ INSTR - IN STRING (OR) INSTANTIATE STRING
 
 level-14 :
 
-here the there is no space between the from and table name which does not make sense in the query structure and the url parameter "shit" is in between them and that is blocked from space,tab space, new line and horizontal tab spaces.
+here there is no space between the FROM and table name which does not make sense in the query structure and the url parameter "shit" is in between them and that is blocked from space,tab space, new line and horizontal tab spaces.
 
 instead of spaces we can use -- %0c - form feed --
 
