@@ -180,7 +180,7 @@ the password is visible after hello is result of the union which will keep the p
 
 level 20 :
 
-  # -- comments the entire text until the line completes.
+  -- comments the entire text until the line completes.
 
   \n -- new line charecter -- this will make the text the sql read that it is a new line input.
   use the new liner in hex form.
