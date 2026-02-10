@@ -185,3 +185,22 @@ level 20 :
   use the new liner in hex form.
   
   <img width="926" height="214" alt="Screenshot 2026-02-08 at 17 59 34" src="https://github.com/user-attachments/assets/82d5ab6b-07a1-4d40-acbb-1cef4ea0aacd" />
+
+
+  level 21 :
+
+  the level does not give any output like before it is used to show hello admin or hello guest.
+
+  but we can do the error based outputs like if the input that we give executed correctly then that will execute another statement which causes the database to produce     an error.
+
+  the query for getting the error based results :
+  
+  <img width="2730" height="142" alt="image" src="https://github.com/user-attachments/assets/27a313b1-d0dc-4965-9199-7a0a58451124" />
+
+  level 22  :
+
+  instead of if in this we can use the where but this page does not give the error response back like the before page but a blank page means that the database has got an   error input.
+  
+  <img width="1279" height="64" alt="Screenshot 2026-02-10 at 17 31 17" src="https://github.com/user-attachments/assets/1b8b2ee3-3737-4380-81a7-5380b53dca76" />
+
+  
