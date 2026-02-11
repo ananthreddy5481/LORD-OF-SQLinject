@@ -204,4 +204,44 @@ level 20 :
   
   <img width="1279" height="64" alt="Screenshot 2026-02-10 at 17 31 17" src="https://github.com/user-attachments/assets/1b8b2ee3-3737-4380-81a7-5380b53dca76" />
 
+
+  level 23 (hell fire) :
+  
+<img width="893" height="45" alt="Screenshot 2026-02-11 at 20 16 08" src="https://github.com/user-attachments/assets/e240f3f9-5417-419a-baed-144ab12c1eee" />
+
+here in the if function i am telling the database to execute order value 1 if the condition is true and 3 if the condition is false.
+
+if the condition is true the admin will come in the beggining and if the condition is false the rubiyo id comes at the top.
+
+<img width="294" height="95" alt="Screenshot 2026-02-11 at 20 16 21" src="https://github.com/user-attachments/assets/996f215e-0585-4264-9a07-413ad3ff8ec7" />
+
+
+**query : ?ORDER=IF(SUBSTR(email,1,1)='a' , 1 , 3 )-- -**
+
+here in this level the real challenge is filtering . in the previous levels we have filtered the correct ouput using the response length but in this case the response length will be almost same and the length will same for incorrect response and correct respose.
+
+to filter we need to use the grep match in the intruder while passing the payloads .
+
+grep match will create another column saying which respose has the specified respose . the grep match searches the html respose for the specified respose .
+
+take anyone of the successfull respose and take the respose like mentioned below ::
+
+successfull response html response:
+
+<img width="771" height="16" alt="Screenshot 2026-02-11 at 20 26 09" src="https://github.com/user-attachments/assets/ea81ba99-3e8c-45a7-9526-d1973031fdd6" />
+
+unsuccessfull response html response:
+
+<img width="772" height="11" alt="Screenshot 2026-02-11 at 20 26 48" src="https://github.com/user-attachments/assets/ae56321f-18ae-47f7-ba0a-ceb339981d04" />
+
+in the successful respone the admin is in the beggining that is in the first row.
+
+<img width="969" height="262" alt="Screenshot 2026-02-11 at 20 28 04" src="https://github.com/user-attachments/assets/49a09d71-9831-4403-afa5-79e210be6ac2" />
+
+the responses get filtered like mentioned below the 1's are with the response given in the grep.
+
+<img width="1345" height="125" alt="Screenshot 2026-02-11 at 20 28 25" src="https://github.com/user-attachments/assets/20653565-97a7-4bcf-a3cd-93a2043b6484" />
+
+
+  
   
