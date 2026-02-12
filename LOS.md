@@ -243,5 +243,9 @@ the responses get filtered like mentioned below the 1's are with the response gi
 <img width="1345" height="125" alt="Screenshot 2026-02-11 at 20 28 25" src="https://github.com/user-attachments/assets/20653565-97a7-4bcf-a3cd-93a2043b6484" />
 
 
+level 24 (evil_wizard) :
+
+
+
   
   
